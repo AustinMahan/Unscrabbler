@@ -1,0 +1,33 @@
+.letter{
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  width: 6vw;
+  height: 6vw;
+  border: 1px solid grey;
+  margin: 3px;
+  float: left;
+  border-radius: 10%;
+  background-color: #ffff99;
+  position: relative;
+}
+p{
+  align-self: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.number{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+span{
+  color: red;
+  font-size: 30px;
+}
+
+#secLetterP, #thirdLetterP, #fourLetterP, #fifthLetterP, #sixthLeterP, #seventhLetterP{
+  visibility: hidden;
+}
