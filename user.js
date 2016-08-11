@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   $('button').click(function(){
     $('h2').empty()
-    var inputVal = $('#inputLetters').val()
+    var inputVal = $('#inputLetters').val().toLowerCase()
     wordsOutput = getAllWords(inputVal)
     if(wordsOutput.length == 0){
       $('h2').append(`<br>There is no words with those letters`)
