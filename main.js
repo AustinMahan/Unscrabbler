@@ -1,6 +1,5 @@
-
+//dynamically makes a tree structure based on an array that is passed in
 var test = {}
-
 wordsArr.forEach(function(word){
   if(!test.hasOwnProperty(word.charAt(0))){
     test[word.charAt(0)] = {}
@@ -38,6 +37,8 @@ wordsArr.forEach(function(word){
   }
 })
 
+//checks the word through the tree structure and fails fast if it doesn't equal whats in the tree
+
 var testWord = function (word){
   for(var i = 0; i < word.length; i++){
     if(i ==0 && !test.hasOwnProperty(word.charAt(0))){
@@ -59,15 +60,15 @@ var testWord = function (word){
       return false
     }
   }
-
-  return true;
+ return true;
 }
 
 console.log(test);
 
-function wordOnPageTree(word){
-  $('allChars').html(Object.keys(test).join(', '))
 
+// Does the tree 'animation' on the page
+function wordOnPageTree(word){
+  $('#instructions').html('Click the red letter to show it\'s children in the tree structure')
   var firstArr = Object.keys(test)
   firstArr[firstArr.indexOf(word.charAt(0))] = `<span> ${word.charAt(0)}</span>`
   console.log(firstArr);
@@ -99,12 +100,3 @@ function wordOnPageTree(word){
   $('#seventhLetterP').html(sevenArr.join(', '))
   // console.log(test[word.charAt(0)][word.charAt(1)][word.charAt(2)][word.charAt(3)][word.charAt(4)][word.charAt(5)][word.charAt(6)]);
 }
-// if(testWord('zymology')){
-//   console.log('zymology');
-// }
-
-// wordsArr.forEach(function(word){
-//   if(word == 'zymology'){
-//     console.log('zymology');
-//   }
-// })
