@@ -72,6 +72,6 @@ h2{
 
 
 /*mobile view*/
-@media (max-width: @screen-xs) {
-    body{font-size: 30px;}
+@media (max-width: 500px) {
+    p{font-size: 30px;}
 }
