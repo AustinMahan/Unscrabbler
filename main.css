@@ -69,3 +69,9 @@ body{
 h2{
   color: black;
 }
+
+
+/*mobile view*/
+@media (max-width: @screen-xs) {
+    body{font-size: 15px;}
+}
