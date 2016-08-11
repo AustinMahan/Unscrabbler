@@ -1,4 +1,4 @@
-
+//finds all the possible combinations of the word and then filters out the duplicates
 function allCombsSorted(userWord) {
   var possibleCombs = Object.keys(getWordsNew(userWord))
   possibleCombs = possibleCombs.filter(function(word, pos, self){
@@ -7,8 +7,6 @@ function allCombsSorted(userWord) {
 
 return possibleCombs
 }
-
-// console.log(allCombsSorted('qlchmrpz').length);
 
 // gets all permutaions from a word
 function getWordsNew(masterword){
@@ -37,7 +35,6 @@ function getWordsNew(masterword){
 }
 
 // sorts by length and returns longer words first
-
 //
 // // returns words if only longer than 4 letters
 // function longerThan4 (arr){
