@@ -33,13 +33,3 @@ function getWordsNew(masterword) {
   }
   return result;
 }
-
-// sorts by length and returns longer words first
-//
-// // returns words if only longer than 4 letters
-// function longerThan4 (arr){
-//   var newArr = arr.filter(function(el){
-//     return el.length > 4
-//   })
-//   return newArr
-// }

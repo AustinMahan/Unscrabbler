@@ -95,9 +95,9 @@ function wordOnPageTree(word) {
   }
 
   if (word.charAt(6) != undefined) {
-    // var sevenArr = Object.keys(test[word.charAt(0)][word.charAt(1)][word.charAt(2)][word.charAt(3)][word.charAt(4)][word.charAt(5)]);
-    // sevenArr[sevenArr.indexOf(word.charAt(6))] = `<span> ${word.charAt(6)}</span>`;
-    // $('#seventhLetterP').html(sevenArr.join(', '));
+    var sevenArr = Object.keys(test[word.charAt(0)][word.charAt(1)][word.charAt(2)][word.charAt(3)][word.charAt(4)][word.charAt(5)]);
+    sevenArr[sevenArr.indexOf(word.charAt(6))] = `<span> ${word.charAt(6)}</span>`;
+    $('#seventhLetterP').html(sevenArr.join(', '));
   };
 
   //  console.log(test[word.charAt(0)][word.charAt(1)][word.charAt(2)][word.charAt(3)][word.charAt(4)][word.charAt(5)][word.charAt(6)]);

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
   var wordsOutput = [];
   var userInput;
 
@@ -81,7 +83,7 @@ function getAllWords(word) {
   }
   console.log(`${fastTime2.mins} : ${fastTime2.sec} : ${fastTime2.milli}`);
   console.log(`Fast time taken: ${Math.abs(fastTime2.mins - fastTime1.mins)} : ${Math.abs(fastTime2.sec  - fastTime1.sec)} : ${Math.abs(fastTime2.milli  - fastTime1.milli)}`);
-  theSlowWay()
+  // theSlowWay()
   return sortByLen(output);
   // use 'celrifd' to test
 }
